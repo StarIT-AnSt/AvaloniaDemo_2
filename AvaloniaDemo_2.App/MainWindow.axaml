@@ -1,0 +1,54 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        x:Class="AvaloniaDemo_2.App.MainWindow"
+        Title="AvaloniaDemo_2.App">
+
+    <Window.Styles>
+        <StyleInclude Source="/MainWindowStyles.axaml"/>
+    </Window.Styles>
+
+    <Grid RowDefinitions="Auto, *, Auto"
+          Classes="Wrapper">
+        <StackPanel Grid.Row="0">
+            <TextBlock Text="Menu"/>
+        </StackPanel>
+
+        <Grid Grid.Row="1"
+              ColumnDefinitions="*, 2*">
+
+            <StackPanel Grid.Column="0">
+                <TextBlock Text="Item 1"/>
+                <TextBlock Text="Item 2"/>
+                <TextBlock Text="Item 3"/>
+                <TextBlock Text="Item 4"/>
+                <TextBlock Text="Item 5"/>
+            </StackPanel>
+
+            <StackPanel Grid.Column="1">
+                <StackPanel Orientation="Horizontal">
+                    <Label Content="First name"
+                           Classes="Input"/>
+                    <TextBox Classes="Input"/>
+                </StackPanel>
+
+                <StackPanel Orientation="Horizontal">
+                    <Label Content="Last name"
+                           Classes="Input"/>
+                    <TextBox Classes="Input"/>
+                </StackPanel>
+
+                <StackPanel Orientation="Horizontal">
+                    <Button Content="Clear"/>
+                    <Button Content="Save"/>
+                </StackPanel>
+            </StackPanel>
+        </Grid>
+
+        <StackPanel Grid.Row="2">
+            <TextBlock Text="Status"/>
+        </StackPanel>
+    </Grid>
+</Window>
