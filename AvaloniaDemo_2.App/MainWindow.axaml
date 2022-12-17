@@ -40,9 +40,12 @@
                     <TextBox Classes="Input"/>
                 </StackPanel>
 
-                <StackPanel Orientation="Horizontal">
-                    <Button Content="Clear"/>
-                    <Button Content="Save"/>
+                <StackPanel Orientation="Horizontal"
+                            Classes="Buttons">
+                    <Button Content="Clear"
+                            Classes="Clear"/>
+                    <Button Content="Save"
+                            Classes="Save"/>
                 </StackPanel>
             </StackPanel>
         </Grid>
