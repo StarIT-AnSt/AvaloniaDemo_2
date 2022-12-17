@@ -1,0 +1,18 @@
+﻿<Styles xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    
+        <Style Selector="Grid.Wrapper">
+                <Setter Property="Margin" Value="5"/>
+        </Style>
+        
+        <Style Selector="Label.Input">
+                <Setter Property="Width" Value="100"/>
+                <Setter Property="Padding" Value="5"/>
+                <Setter Property="Margin" Value="5 10 5 10"/>
+        </Style>
+        <Style Selector="TextBox.Input">
+                <Setter Property="Width" Value="375"/>
+                <Setter Property="Padding" Value="5"/>
+                <Setter Property="Margin" Value="5 10"/>
+        </Style>
+</Styles>
